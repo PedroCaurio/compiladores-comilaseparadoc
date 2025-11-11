@@ -1,0 +1,6 @@
+# Build artifacts
+main
+*.o
+
+# macOS metadata
+.DS_Store
