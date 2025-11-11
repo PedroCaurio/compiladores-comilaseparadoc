@@ -1,7 +1,7 @@
 CC := gcc
 CFLAGS := -Wall -Wextra -pedantic -std=c11
 TARGET := main
-SRCS := main.c soma.c subtrai.c multiplica.c divide.c absoluto.c fatorial.c
+SRCS := main.c soma.c subtrai.c multiplica.c divide.c absoluto.c fatorial.c potencia.c max.c min.c
 OBJS := $(SRCS:.c=.o)
 
 .PHONY: all clean run
@@ -17,6 +17,9 @@ multiplica.o: multiplica.c multiplica.h
 divide.o: divide.c divide.h
 absoluto.o: absoluto.c absoluto.h
 fatorial.o: fatorial.c fatorial.h
+potencia.o: potencia.c potencia.h
+max.o: max.c max.h
+min.o: min.c min.h
 
 run: $(TARGET)
 	./$(TARGET)
