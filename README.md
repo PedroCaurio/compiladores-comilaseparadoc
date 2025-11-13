@@ -35,7 +35,15 @@ make run
 ```
 Saída esperada:
 ```
-s = 3
+soma = 10
+subtracao = 3
+multiplicacao = 4
+divisao = 2
+absoluto (-5) = 5
+fatorial = 6
+potencia = 16
+maximo = 5
+minimo = 2
 ```
 
 ## Como Limpar
