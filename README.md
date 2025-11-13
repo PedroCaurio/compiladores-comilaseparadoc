@@ -1,6 +1,10 @@
-# Exemplo: Compilação Separada em C
+Compilação Separada em C
 
-Pequena demonstração de como separar **protótipos** (`.h`) e **implementações** (`.c`) usando `make` para automatizar a compilação. Ideal para estudantes que estão migrando de exemplos monolíticos para projetos modulares em C.
+Pequena demonstração de como separar **protótipos** (`.h`) e **implementações** (`.c`) usando `make` para automatizar a compilação. Repositório desenvolvido para disciplina de Compiladores no curso de Engeharia de Computação na Universidade Federal do Rio Grande. Código baseado no repositório: https://github.com/tioguerra/ComilaSeparadoC
+
+## Responsáveis
+- Felipe Fagundes Costa
+- Pedro Martins Caurio
 
 ## Pré-requisitos
 - Compilador C compatível com C11 (ex.: `gcc` ou `clang`)
@@ -68,5 +72,3 @@ Remove o executável e todos os objetos.
 
 ## Próximos Passos Sugestões
 1. Escrever casos de teste simples usando asserts ou uma mini suíte.
-
-Código baseado no repositório: https://github.com/tioguerra/ComilaSeparadoC
