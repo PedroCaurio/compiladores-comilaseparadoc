@@ -9,12 +9,18 @@ Pequena demonstração de como separar **protótipos** (`.h`) e **implementaçõ
 ## Estrutura do Projeto
 ```
 .
-├── main.c          # Programa principal
-├── soma.c/.h       # Função soma
-├── subtrai.c/.h    # Função subtrai
-├── Makefile        # Regras de compilação
-├── .gitignore      # Ignora artefatos de build
-└── README.md       # Guia do projeto
+├── main.c           # Programa principal
+├── soma.c/.h        # Função soma
+├── subtrai.c/.h     # Função subtrai
+├── multiplica.c/.h  # Função multiplica
+├── divide.c/.h      # Função divide
+├── fatorial.c/.h    # Função fatorial
+├── potenciacao.c/.h # Função potenciação
+├── max.c/.h         # Função maximo
+├── min.c/.h         # Função mínimo
+├── Makefile         # Regras de compilação
+├── .gitignore       # Ignora artefatos de build
+└── README.md        # Guia do projeto
 ```
 
 ## Como Compilar
@@ -44,18 +50,15 @@ Remove o executável e todos os objetos.
 - **Programa principal**: `main.c` inclui somente headers e coordena o fluxo chamando as funções de cada módulo.
 - **Makefile**: recompila apenas o necessário a cada alteração e oferece alvos utilitários (`run`, `clean`).
 
+## Operações implementadas no código base
+- **Multiplicação**
+- **Divisão**
+- **Potenciação** 
+- **Fatorial**
+- **Máximo** 
+- **Mínimo**
+
 ## Próximos Passos Sugestões
-1. Criar novos módulos (ex.: `multiplica.c/.h`).
-2. Referenciar os novos headers em `main.c`.
-3. Adicionar os novos objetos no `Makefile`.
-4. Escrever casos de teste simples usando asserts ou uma mini suíte.
+1. Escrever casos de teste simples usando asserts ou uma mini suíte.
 
-## Publicando no GitHub
-1. Execute `git init` dentro desta pasta.
-2. Adicione os arquivos: `git add .`.
-3. Faça o primeiro commit: `git commit -m "Initial commit"`.
-4. Crie um repositório vazio no GitHub.
-5. Adicione o remoto: `git remote add origin git@github.com:SEU_USUARIO/SEU_REPO.git`.
-6. Envie o código: `git push -u origin main` (ou `master`, conforme o padrão do seu repositório).
-
-Bons estudos! 🚀
+Código baseado no repositório: https://github.com/tioguerra/ComilaSeparadoC
